@@ -3,7 +3,7 @@
   * Cryptobot is a Elixir Messenger bot to communicate historical Cryptocurrency prices to the User.
   * The user needs to send a "hi" message in the messenger and than choose appropriately to get the info that they need.
 
-Initial setup
+**Initial setup**
 
 1) Create a page on Facebook
 2) Create a Messenger app in the developers.facebook.com and link it to the above page
@@ -12,16 +12,14 @@ Initial setup
 5) Add the callback URL(Webhook) and ensure that the server is on when adding it
 6) Send a hi message in the messenger and you are good to start
 
-Server deployment
+**Server deployment**
 
-Local Setup
-___________
+**Local Setup**
 
 mix deps.get
 mix phx.server
 
-Docker build
-____________
+**Docker build**
 
 docker build ./ -t cryptobot
 
