@@ -114,11 +114,11 @@ defmodule Cryptobot.Messages.Messages do
   end
 
   defp get_quick_replies(coins, :name) do
-    Enum.map(coins, fn %{"thumb" => image, "name" => name} ->
+    Enum.map(coins, fn %{"thumb" => image, "name" => name, "id" => id} ->
       %{
         content_type: "text",
         title: name,
-        payload: "price #{String.downcase(name)}",
+        payload: "price #{String.downcase(id)}",
         image_url: image
       }
     end)
